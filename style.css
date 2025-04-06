@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabuleiro{
+    border: 2px solid #333;
+}
+.pp{
+    font-size: 67px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pb{
+    font-size: 67px;
+    color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.branco{
+    background-color: burlywood;
+    width: 100px;
+    height: 100px;
+}
+.preto{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}
+.linha{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+.pp:hover {
+    outline: 3px solid rgb(173, 192, 248); 
+    outline-offset: -3px; 
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  .pb:hover { 
+    outline: 3px solid rgb(253, 238, 200);
+    outline-offset: -3px; 
+    box-sizing: border-box;
+    cursor: pointer;
+  }
